@@ -1,0 +1,232 @@
+@font-face {
+    font-family:'apple';
+    src: url('Apple\ Days.ttf');
+}
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kalam', cursive;
+    box-sizing: border-box;
+    overflow: hidden;
+ 
+}
+body, html {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-image: linear-gradient(to right, #36631c,#4D9027 , #f2efde );
+    background-repeat: no-repeat;
+}
+main {
+    height: 92vh;
+    width: 100vw;
+}
+header {
+    position: absolute;
+    display:flex;
+    align-items:center;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8vh;
+    width: 100vw;
+    background-color:transparent;
+    margin-top: 10px;
+}
+.nav-list, ul {
+    list-style:none;
+    display: flex;
+    margin-right: 55px;
+}
+.nav-list li {
+    letter-spacing: 2px;
+    margin-left: 32px;
+}
+.nav-list li:hover {
+    background-color: #4D9027;
+    padding:0px 5px 0px 1px ;
+    border-radius: 10px;
+}
+
+header a {
+    text-decoration: none;
+    color:black;
+    padding-left: 15px;
+    font-weight: bold;
+}
+header img {
+    width:60px;
+    padding: 0px 0px 0px 20px;
+}
+.main-div {
+    display: flex;
+    height: 90vh;
+}
+
+.div1 {
+    display: flex;
+    padding-left: 30px;
+    justify-content: center;
+    padding-top: 90px;
+    flex-direction: column;
+}
+.div1 h1 {
+    font-size: 4em;
+    font-weight: lighter;
+    font-family: 'Kalam', cursive;
+    color:#f1eada;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.712);
+    margin-bottom: 30px;
+}
+.div1 span {
+    font-weight:700;
+}
+.div1 p {
+    font-weight: lighter;
+    font-family: 'Kalam', cursive;
+    font-size: 1em;
+    color:#f1eada;
+   
+}
+
+.div2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 90px;
+}
+.div2 img {
+    width: 800px;
+    margin-top: 30px;
+}
+.div-button {
+    display: flex;
+}
+
+.div-button button {
+    margin-top: 30px;
+    text-decoration: none;
+    padding:10px 20px 10px 20px;
+    border-radius: 20px;
+    border: none;
+    color: black;
+    font-weight: 700;
+    font-size:1em;
+    width: 130px;
+    box-shadow: 1px 1px 1px 1.3px rgba(0, 0, 0, 0.411);
+}
+.div-button button:hover {
+    cursor: pointer;
+    background-color:#bdb58d;
+
+}
+
+.botao-final {
+    display: none;
+}
+
+
+
+@media  screen and  (max-width:962px)  {
+    .div1 h1 {
+        font-size: 2em;
+        font-weight: lighter;
+        font-family: 'Kalam', cursive;
+        color:#f1eada;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.712);
+        margin-bottom: 30px;
+    }
+
+    .div1 p {
+        font-weight: lighter;
+        font-family: 'Kalam', cursive;
+        font-size: 1em;
+        color:#f1eada;
+       
+    }
+
+    .div2 img {
+        width: 300px;
+        margin-top: 30px;
+    }
+    
+}
+
+@media  screen and  (max-width:700px) {
+    .main-div {
+        display: block;
+        height: 90vh;
+    }
+
+    .div2 {
+        padding-top: 1px;
+    }
+
+    header > nav > ul > li {
+        display: none;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+
+    .div1 p {
+        display: block;
+        font-weight: lighter;
+        font-family: 'Kalam', cursive;
+        font-size: 1em;
+        color:#0a0a09;
+        margin-right: 10px;
+       
+    }
+    
+    .div-button button {
+        font-size:.7em;
+    }
+
+    .div-button {
+        width: 100px;
+    }
+
+    .div-button {
+        display: none;
+    }
+
+    .div2 img {
+        width: 300px;
+        margin-top: 5px;
+    }
+
+    
+    .botao-final {
+        display:block;
+        margin: auto;
+        margin-top: 50px;
+        
+        text-decoration: none;
+        padding:10px 20px 10px 20px;
+        border-radius: 20px;
+        border: none;
+        color: black;
+        font-weight: 700;
+        font-size:1em;
+        width: 130px;
+        box-shadow: 1px 1px 1px 1.3px rgba(0, 0, 0, 0.411);
+    }
+
+    .div1 h1 {
+        text-indent: 20px;
+    }
+
+
+ 
+
+
+
+}
+
+
